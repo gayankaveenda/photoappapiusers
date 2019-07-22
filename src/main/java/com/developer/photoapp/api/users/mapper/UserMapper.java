@@ -4,7 +4,6 @@ import com.developer.photoapp.api.users.domain.User;
 import com.developer.photoapp.api.users.model.UserDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-import org.springframework.context.annotation.ComponentScan;
 
 @Mapper
 public interface UserMapper {
