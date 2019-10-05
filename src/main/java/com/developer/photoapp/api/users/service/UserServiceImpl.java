@@ -63,6 +63,6 @@ public class UserServiceImpl implements UserService {
 
         userDb.orElseThrow(() -> new UsernameNotFoundException(username));
 
-        return new org.springframework.security.core.userdetails.User(userDb.get().getEmail(),userDb.get().getEncryptedPassword(),new ArrayList<>());
+        return new org.springframework.security.core.userdetails.User(userDb.get().getEmail(),userDb.get().getEncryptedPassword(),true, true, true, true, new ArrayList<>());
     }
 }
